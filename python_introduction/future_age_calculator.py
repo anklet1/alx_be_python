@@ -2,7 +2,7 @@
 
 #Taking input from user
 
-current_age = int(input("How old are you: "))
+current_age = int(input("How old are you? "))
 
 
 #Calculate age by 2050
