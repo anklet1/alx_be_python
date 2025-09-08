@@ -5,16 +5,16 @@ rate = 5
 
 #Prompting for user input
 
-monthly_income = float(input("Enter your monthly income: "))
+monthly_income = int(input("Enter your monthly income: "))
 
-total_monthly_expenses = float(input("Enter your total monthly expenses: "))
+monthly_expenses = int(input("Enter your total monthly expenses: "))
 
-monthly_savings = total_monthly_expenses - monthly_income
+monthly_savings = monthly_income - monthly_expenses
 
 
 #annual savings with 5% rate of interest
-yearly_savings = monthly_savings * 12 
-projected_savings = yearly_savings + (yearly_savings * 0.05)
+yearly_savings = monthly_savings * 12
+projected_savings = round(yearly_savings + (yearly_savings * 0.05))
 
 
 #Display results
