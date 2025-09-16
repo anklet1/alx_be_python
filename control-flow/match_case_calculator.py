@@ -5,21 +5,16 @@
 
 # match_case_calculator.py
 
-# Function to safely get a number from the user
-def get_number(prompt):
-    """Prompt user until valid number is entered."""
-    while True:
-        try:
-            return float(input(prompt))
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
+# Function to safely get a number from the us
 
-# Prompt user for input of numbers
-num1 = get_number("Enter the first number: ")
-num2 = get_number("Enter the second number: ")
+# match_case_calculator.py
+
+# Prompt user for input
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 operation = input("Choose the operation (+, -, *, /): ")
 
-# Calculation using match case
+# Perform calculation using match case
 match operation:
     case "+":
         result = num1 + num2
@@ -38,5 +33,4 @@ match operation:
             print(f"The result is {result}.")
     case _:
         print("Invalid operation selected.")
-
 
