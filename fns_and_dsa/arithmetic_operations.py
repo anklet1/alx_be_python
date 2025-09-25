@@ -23,4 +23,4 @@ def perform_operation(num1: float, num2: float, operation: str):
             return "Error: Division by zero"
         return num1 / num2
     else:
-        return "Error: Invalid operation"
+        return "Division by zero error"
